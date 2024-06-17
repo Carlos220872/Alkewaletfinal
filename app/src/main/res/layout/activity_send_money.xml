@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SendMoney">
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:contentDescription="Texto de envio de dinero"
+        app:srcCompat="@drawable/barra_superior3"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="225dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16"
+        app:srcCompat="@drawable/yara" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/jua"
+        android:text="Cantidad a Ingresar"
+        android:textColor="#1A1A1A"
+        app:layout_constraintStart_toStartOf="@+id/imageView19"
+        app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+
+    <EditText
+        android:id="@+id/IngresaMonto"
+        android:layout_width="224dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:fontFamily="@font/jua"
+        android:hint="20:00"
+        android:inputType="number"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView19"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="223dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/jua"
+        android:text="Notas de Transferencia"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/IngresaMonto"
+        app:layout_constraintTop_toBottomOf="@+id/IngresaMonto" />
+
+    <EditText
+        android:id="@+id/AgregaNotas"
+        android:layout_width="375dp"
+        android:layout_height="199dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/jua"
+        android:gravity="top"
+        android:hint="@string/agregar_notas"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#1A87DD"
+        android:fontFamily="@font/jua"
+        android:scrollbarSize="14sp"
+        android:text="@string/enviar_dinero"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AgregaNotas" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

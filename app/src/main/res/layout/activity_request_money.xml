@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarSize="14dp"
+    tools:context=".RequestMoney">
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/barra_superior2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="141dp" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11"
+        app:srcCompat="@drawable/reemkhaled" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/jua"
+        android:text="Cantidad a Ingresar"
+        android:textColor="#1A1A1A"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView12"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+    <EditText
+        android:id="@+id/IngresaMonto"
+        android:layout_width="269dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:fontFamily="@font/jua"
+        android:hint="20:00"
+        android:inputType="number"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="295dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="84dp"
+        android:fontFamily="@font/jua"
+        android:text="Notas de Transferencia"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/IngresaMonto"
+        app:layout_constraintTop_toBottomOf="@+id/IngresaMonto" />
+
+    <EditText
+        android:id="@+id/AgregaNotas"
+        android:layout_width="372dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/jua"
+        android:gravity="top"
+        android:hint="@string/agregar_notas"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="377dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#1A87DD"
+        android:fontFamily="@font/jua"
+        android:scrollbarSize="14sp"
+        android:text="@string/ingresa_dinero"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
